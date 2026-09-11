@@ -21,7 +21,7 @@
 
 把手机袋照片交给 OpenCV 初筛，在界面上核对袋号和姓名，再保存为本次课的上交记录。期末按班级、学期和日期导出统计，历史更正会同步反映到汇总结果中。
 
-**支持桌面网页、macOS 应用窗口和原生 Android。** 首次准备依赖后，日常识别与记录管理都在本地完成。
+**支持桌面网页、macOS 应用窗口、原生 Android 和 iOS。** 首次准备依赖后，日常识别与记录管理都在本地完成。
 
 ## 📸 实际效果
 
@@ -50,6 +50,14 @@
 
 <sub>截图展示桌面版。统计中的次数为虚构演示数据；Android 拍照流程仍需真机验证。</sub>
 
+### iOS 原生应用
+
+基于 Mac 版流程实现的 SwiftUI 版本，支持拍照、相册、逐袋核对、Excel 名单和学期统计。最低 iOS 26，使用 Xcode 26 打开 [iOS 工程](ios/PhonePocketManager.xcodeproj)。安装到 iPhone 需要配置自己的签名账号。
+
+<img src="docs/images/ios-statistics.png" width="280" alt="iOS 模拟器实际运行：虚构课次统计与Excel分享">
+
+模拟器流程已验证；真机拍照尚待验证。详见 [iOS 使用与构建说明](ios/README.md)。
+
 ## ✨ 能做什么
 
 | 功能 | 说明 |
@@ -60,7 +68,7 @@
 | ✅ 课次登记 | 已交、未交、请假、缺勤、免交、待复核；重复保存更新同一课次 |
 | 🕘 历史可改 | 保留当次姓名与袋号快照，修改历史记录后重新汇总 |
 | 📊 Excel 导出 | 班级、学期、日期筛选；汇总与逐次明细一起导出 |
-| 🔒 本地保存 | SQLite 存储，演示与正式记录分离，不使用云端识别服务 |
+| 🔒 本地保存 | 本地存储，演示与正式记录分离，不使用云端识别服务 |
 
 ## 🚀 快速开始
 
@@ -103,7 +111,7 @@ cd android
 
 </details>
 
-> 桌面与 Android 数据独立保存，暂不自动同步。详细安装、数据备份和统计规则见 [使用文档](docs/getting-started.md)。
+> 各平台数据独立保存，暂不自动同步。详细安装、数据备份和统计规则见 [使用文档](docs/getting-started.md)。
 
 ## 📋 导入自己的班级
 
@@ -120,7 +128,7 @@ cd android
 
 | 桌面 / macOS | Android | 存储与交换 |
 | :--- | :--- | :--- |
-| Python · Streamlit · OpenCV | Kotlin · OpenCV · 系统相机 | SQLite · XLSX |
+| Python · Streamlit · OpenCV | Kotlin · OpenCV · 系统相机 | SQLite / iOS 本地 JSON · XLSX |
 | macOS 使用 Swift / WKWebView 窗口 | 设备本地运行 | 无云端同步 |
 
 识别规则面向**蓝色边框、黄色背景、9 行 × 6 列**手机袋。反光、遮挡、袋体变形或手机完全藏入袋中都可能造成误判，结果应由教师复核。待复核不计为确认未交。
@@ -134,6 +142,7 @@ cd android
 phone-pocket-manager/
 ├── desktop/       # 页面、识别、存储、macOS 窗口
 ├── android/       # 原生 Android 工程
+├── ios/           # SwiftUI iPhone / iPad 工程
 ├── docs/          # 使用文档与实际截图
 └── tools/         # 虚构数据生成与公开文件检查
 ```
