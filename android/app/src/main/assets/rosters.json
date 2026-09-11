@@ -1,0 +1,86 @@
+[
+  {
+    "class_name": "示例一班",
+    "sid": "90000101",
+    "name": "张三",
+    "pocket": "01",
+    "source_class": "示例一班"
+  },
+  {
+    "class_name": "示例一班",
+    "sid": "90000102",
+    "name": "李四",
+    "pocket": "02",
+    "source_class": "示例一班"
+  },
+  {
+    "class_name": "示例一班",
+    "sid": "90000103",
+    "name": "王五",
+    "pocket": "03",
+    "source_class": "示例一班"
+  },
+  {
+    "class_name": "示例一班",
+    "sid": "90000104",
+    "name": "赵六",
+    "pocket": "04",
+    "source_class": "示例一班"
+  },
+  {
+    "class_name": "示例一班",
+    "sid": "90000105",
+    "name": "钱七",
+    "pocket": "05",
+    "source_class": "示例一班"
+  },
+  {
+    "class_name": "示例一班",
+    "sid": "90000106",
+    "name": "孙八",
+    "pocket": "06",
+    "source_class": "示例一班"
+  },
+  {
+    "class_name": "示例二班",
+    "sid": "90000201",
+    "name": "张三",
+    "pocket": "01",
+    "source_class": "示例二班"
+  },
+  {
+    "class_name": "示例二班",
+    "sid": "90000202",
+    "name": "李四",
+    "pocket": "02",
+    "source_class": "示例二班"
+  },
+  {
+    "class_name": "示例二班",
+    "sid": "90000203",
+    "name": "王五",
+    "pocket": "03",
+    "source_class": "示例二班"
+  },
+  {
+    "class_name": "示例二班",
+    "sid": "90000204",
+    "name": "赵六",
+    "pocket": "04",
+    "source_class": "示例二班"
+  },
+  {
+    "class_name": "示例二班",
+    "sid": "90000205",
+    "name": "钱七",
+    "pocket": "05",
+    "source_class": "示例二班"
+  },
+  {
+    "class_name": "示例二班",
+    "sid": "90000206",
+    "name": "孙八",
+    "pocket": "06",
+    "source_class": "示例二班"
+  }
+]
