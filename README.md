@@ -100,6 +100,8 @@ cd phone-pocket-manager
 <details>
 <summary><strong>🤖 Android：构建可拍照的 APK</strong></summary>
 
+Android 1.1 采用 **Google Material 3**：四栏底部导航、圆角卡片、统一表单与弹窗，支持系统深色模式和 Android 12+ 动态配色。拍照、名单、历史与统计均在应用内完成。查看 [界面说明](android/UI.md) · [更新记录](android/CHANGELOG.md)。
+
 需要 **JDK 17、Android SDK 36、Build Tools 36.0.0**。配置 `ANDROID_HOME` 或 `android/local.properties` 后运行：
 
 ```sh

@@ -6,8 +6,8 @@ android {
         applicationId = "org.phonepocketmanager.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk { abiFilters += providers.gradleProperty("phoneAbis").orElse("arm64-v8a,armeabi-v7a,x86_64").get().split(",") }
     }
@@ -15,6 +15,7 @@ android {
     buildTypes { getByName("release") { isMinifyEnabled = false } }
 }
 dependencies {
+    implementation("com.google.android.material:material:1.13.0")
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.json:json:20240303")
     testImplementation("net.sf.kxml:kxml2:2.3.0")
